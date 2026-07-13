@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "cliente": "Ana Silva",
+    "equipamento": "PlayStation 4",
+    "numeroSerie": "MF814552320",
+    "defeito": "Não liga",
+    "status": "aberto"
+  },
+  {
+    "id": 2,
+    "cliente": "Carlos Mendes",
+    "equipamento": "PlayStaion 5",
+    "numeroSerie": "G32B01BZS11150370",
+    "defeito": "Sem imagem",
+    "status": "andamento"
+  },
+  {
+    "id": 3,
+    "cliente": "Marina Souza",
+    "equipamento": "Xbox One",
+    "numeroSerie": "00000154005",
+    "defeito": "Liga e cai erro tela ",
+    "status": "concluida"
+  }
+]

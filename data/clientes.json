@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Silva",
+    "email": "ana.silva@email.com",
+    "cep": "96205-000",
+    "endereco": "Avenida Rio Grande",
+    "bairro": "Cassino",
+    "cidade": "Rio Grande",
+    "estado": "RS"
+  },
+  {
+    "id": 2,
+    "nome": "Carlos Mendes",
+    "email": "carlos.mendes@email.com",
+    "cep": "96200-130",
+    "endereco": "Praça Tamandaré",
+    "bairro": "Centro",
+    "cidade": "Rio Grande",
+    "estado": "RS"
+  },
+  {
+    "id": 3,
+    "nome": "Marina Souza",
+    "email": "marina.souza@email.com",
+    "cep": "96215-020",
+    "endereco": "Rua dos Saveiros",
+    "bairro": "Parque Marinha",
+    "cidade": "Rio Grande",
+    "estado": "RS"
+  }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G@meService - Dashboard</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand-text">
+        <h1>Game Service</h1>
+        <p>Sistema de Ordem de Serviço</p>
+      </div>
+      <span id="nome-usuario"></span>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul id="menuLinks">
+        <li><a href="dashboard.html">Painel Principal</a></li>
+        <li><a href="cadastro_os.html">Cadastrar OS</a></li>
+        <li><a href="cadastro_clientes.html">Cadastrar Cliente</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card azul">Total de OS: <span id="total-os">0</span></div>
+      <div class="card verde">Total de Clientes: <span id="total-clientes">0</span></div>
+      <div class="card laranja">Concluídas: <span id="os-concluidas">0</span></div>
+      <div class="card amarelo">Abertas: <span id="os-abertas">0</span></div>
+      <div class="card roxo">Em Andamento: <span id="os-andamento">0</span></div>
+    </section>
+
+
+    <section class="ordens">
+      <h2>Ordens de Serviço</h2>
+      <div class="filtros">
+        <label for="status">Filtrar por Status:</label>
+        <select id="status">
+          <option value="todos">Todos</option>
+          <option value="aberto">Em Aberto</option>
+          <option value="andamento">Em Andamento</option>
+          <option value="concluida">Concluída</option>
+        </select>
+
+        <input type="text" id="busca" placeholder="Buscar por cliente ou equipamento">
+        <button id="btnBusca">Buscar</button>
+        <button type="button" id="btnCopiarResumo" class="btn-secundario">Copiar resumo</button>
+      </div>
+
+      <div class="area-tabela">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Cliente</th>
+              <th>Equipamento</th>
+              <th>Status</th>
+              <th>Nº Serie</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-os">
+          
+          </tbody>
+        </table>
+      </div>
+      <p id="mensagemResumo" class="mensagem-resumo"></p>
+    </section>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>

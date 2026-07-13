@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>G@meService</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+ 
+  <div id="background">
+    <iframe src="animacao/index.html" frameborder="0"></iframe>
+  </div>
+
+  <main>
+    <div class="login-box">
+      <header>
+        <img src="img/logo.png" alt="Logo G@meService" class="img_logo">
+        <h1>Game Service</h1>
+        <p>Sistema de Ordem de Serviço</p>
+      </header>
+      <form id="login_Formulario" novalidate>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="username" aria-required="true">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password" aria-required="true">
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="mensagem" role="alert" aria-live="polite"></p>
+      
+    </div>
+  </main>
+  
+  <script src="js/index.js"></script>
+</body>
+</html>

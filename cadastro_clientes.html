@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G@meService - Cadastrar Cliente</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cadastro_clientes.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand-text">
+        <h1>Game Service</h1>
+        <p>Sistema de Ordem de Serviço</p>
+      </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul id="menuLinks">
+        <li><a href="dashboard.html">Painel Principal</a></li>
+        <li><a href="cadastro_os.html">Cadastrar OS</a></li>
+        <li><a href="cadastro_clientes.html">Cadastrar Cliente</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Cadastro de Cliente</h2>
+      <form id="formCliente">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome do cliente" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite o e-mail do cliente" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone com DDD" required>
+
+        <label for="cep">CEP:</label>
+        <div class="cep-box">
+          <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+          <button type="button" id="buscarCep">Buscar CEP</button>
+        </div>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="RS">RS</option>
+          <option value="SC">SC</option>
+        </select>
+
+        <button type="submit">Cadastrar Cliente</button>
+      </form>
+      <p id="mensagem-cliente"></p>
+    </section>
+  </main>
+
+  <script src="js/cadastro_clientes.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #222;
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+
+.navbar {
+  background: #1f3a8a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 15px;
+  position: relative;
+}
+
+
+.navbar .brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-right: auto;
+}
+
+
+.navbar h1 {
+  font-size: 30px;
+  margin: 0;
+  line-height: 1;
+}
+
+
+.navbar .brand-text p {
+  font-size: 20px;
+  opacity: .9;
+  margin-top: 2px;
+
+  animation: fade 0.9s infinite;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .35;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#nome-usuario {
+  font-size: 20px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+.navbar ul {
+  display: none;
+  list-style: none;
+  background: #1f3a8a;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+
+.navbar ul.menu-visivel {
+  display: block;
+}
+
+
+.navbar ul li {
+  margin: 6px 0;
+}
+
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  position: relative;
+  transition:
+    background .3s,
+    color .3s,
+    transform .25s;
+}
+
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: 6px;
+  width: 0;
+  height: 2px;
+  background: #fbbf24;
+  transition: width .3s;
+}
+
+
+.navbar ul li a:hover,
+.navbar ul li a:focus-visible {
+  background: rgba(255,255,255,.15);
+  color: #fbbf24;
+  transform: translateX(6px);
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a:focus-visible::after {
+  width: calc(100% - 24px);
+}
+
+
+.navbar ul li a.ativo {
+  background: #2563eb;
+  font-weight: bold;
+}
+
+
+.menu-toggle {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background .3s,
+    transform .25s,
+    rotate .3s;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  background: #2563eb;
+  transform: scale(1.08);
+}
+
+
+@media (min-width:768px) {
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .navbar ul li {
+    margin-left: 12px;
+  }
+}

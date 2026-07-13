@@ -1,0 +1,68 @@
+
+.formulario {
+  margin: 15px;
+  width: calc(100% - 30px);
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+}
+
+
+.formulario h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9ca3af;
+  margin-top: 6px;
+  border-radius: 8px;
+}
+
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+form button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+#mensagem-os {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-height: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    margin: 30px auto;
+    max-width: 700px;
+    padding: 25px;
+  }
+}
