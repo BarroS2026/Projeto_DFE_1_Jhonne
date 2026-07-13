@@ -62,7 +62,7 @@ Este projeto é uma aplicação simples em HTML, CSS e JavaScript para controlar
 - [x] README atualizado
 
 ## Como executar
-⚠️ Este projeto usa `fetch()` para carregar dados de arquivos JSON. Por isso, **não funciona
+   Este projeto usa `fetch()` para carregar dados de arquivos JSON. Por isso, **não funciona
 abrindo o `index.html` diretamente com duplo clique** (o protocolo `file://` bloqueia esse
 tipo de requisição por segurança do navegador). É necessário rodar por um servidor local
 ou publicado.
@@ -74,7 +74,7 @@ ou publicado.
    (ou clique em "Go Live" na barra inferior).
 4. Com o Chrome já aberto, a página carrega normalmente de primeira, incluindo a
    animação de fundo.
-5. ⚠️ Se o Chrome estiver fechado antes de clicar em "Go Live", ele vai abrir sozinho e a
+5. Se o Chrome estiver fechado antes de clicar em "Go Live", ele vai abrir sozinho e a
    página pode carregar em branco na primeira tentativa — nesse caso, basta pressionar
    **F5** para recarregar.
 6. Faça login com um dos usuários cadastrados em `data/usuarios.json`.
