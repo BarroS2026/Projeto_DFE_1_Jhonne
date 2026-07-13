@@ -62,7 +62,28 @@ Este projeto é uma aplicação simples em HTML, CSS e JavaScript para controlar
 - [x] README atualizado
 
 ## Como executar
-Abra o arquivo `index.html` no navegador.
+⚠️ Este projeto usa `fetch()` para carregar dados de arquivos JSON. Por isso, **não funciona
+abrindo o `index.html` diretamente com duplo clique** (o protocolo `file://` bloqueia esse
+tipo de requisição por segurança do navegador). É necessário rodar por um servidor local
+ou publicado.
+
+### Opção 1: VS Code + Live Server (recomendado para desenvolvimento)
+1. Abra a pasta do projeto no VS Code.
+2. **Abra o Chrome manualmente antes** (deixe ele já aberto, mesmo que em outra aba).
+3. Clique com o botão direito no `index.html` e selecione **"Open with Live Server"**
+   (ou clique em "Go Live" na barra inferior).
+4. Com o Chrome já aberto, a página carrega normalmente de primeira, incluindo a
+   animação de fundo.
+5. ⚠️ Se o Chrome estiver fechado antes de clicar em "Go Live", ele vai abrir sozinho e a
+   página pode carregar em branco na primeira tentativa — nesse caso, basta pressionar
+   **F5** para recarregar.
+6. Faça login com um dos usuários cadastrados em `data/usuarios.json`.
+
+### Opção 2: Netlify Drop (para testar sem instalar nada)
+1. Acesse [https://app.netlify.com/drop](https://app.netlify.com/drop)
+2. Arraste a pasta inteira do projeto para a área indicada.
+3. Aguarde a publicação e acesse o link gerado — login e navegação funcionam
+   normalmente, pois o site já roda em um servidor real.
 
 ## Observação
 O projeto foi atualizado com melhorias de acessibilidade, responsividade, uso de métodos de array e integração com a Clipboard API.
