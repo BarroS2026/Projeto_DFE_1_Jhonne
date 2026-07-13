@@ -26,6 +26,7 @@ Este projeto é uma aplicação simples em HTML, CSS e JavaScript para controlar
 - `js/` → lógica do sistema
 - `data/` → JSON com usuários, clientes e ordens
 - `animacao/` → animação de fundo (WebGL) exibida na tela de login
+- `img/` → imagens do projeto (logo)
 
 ## Checklist do projeto
 
