@@ -89,3 +89,8 @@ ou publicado.
 
 ## Observação
 O projeto foi atualizado com melhorias de acessibilidade, responsividade, uso de métodos de array e integração com a Clipboard API.
+
+## Créditos
+A animação de fundo (WebGL) exibida na tela de login foi obtida do repositório de código 
+aberto [PlayStation 3 XMB Waves Recreation](https://github.com/linkev/PlayStation-3-XMB) 
+(linkev), licenciado sob MIT License, não sendo autoria própria.
